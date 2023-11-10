@@ -1,0 +1,69 @@
+// ШРИФТЫ
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// ШРИФТЫ
+
+// СТАНДАРТНЫЕ СТИЛИ ДЛЯ КОНКРЕТНОГО МАКЕТА
+body {
+    font-family: $font-main;
+    background-color: $white;
+    color: $black;
+    // Стараться искать абзац целый и от него писать стандартный шрифт
+    font-size: 22px;
+}
+
+a {
+    color: $black;
+    transition: color 0.3s ease-in-out;
+    // &:hover {
+    //     color: $green;
+    // }
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1300px;
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+}
+
+.none {
+    display: none !important;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+// СТАНДАРТНЫЕ СТИЛИ ДЛЯ КОНКРЕТНОГО МАКЕТА
+
+*,
+html * /* override x.xhtml.ru style */ {
+    scrollbar-width: thin;
+    scrollbar-color: $white $black;
+}
+
+*::-webkit-scrollbar,
+html *::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    border-radius: 12px;
+}
+*::-webkit-scrollbar-track,
+html *::-webkit-scrollbar-track {
+    background: $black;
+    border-radius: 12px;
+}
+*::-webkit-scrollbar-thumb,
+html *::-webkit-scrollbar-thumb {
+    background-color: $white;
+    border-radius: 5px;
+    border: 2px solid $black;
+    border-radius: 12px;
+}

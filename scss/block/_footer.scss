@@ -1,0 +1,57 @@
+.footer{
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: $white;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    &__setting{
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        font-size: 16px;
+    }
+
+    &__text{
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    &__input{
+        background-color: $gray;
+        border-radius: 12px;
+        padding: 8px;
+        input{
+            width: 700px;
+        }
+    }
+}
+
+
+@media (max-width: 770px) {
+    .footer{    
+        &__input{
+            input{
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .footer{    
+        &__input{
+            input{
+                width: 150px;
+            }
+        }
+    }
+}

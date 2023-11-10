@@ -1,0 +1,72 @@
+@mixin decorNumber {
+    position: absolute;
+    top: 0;
+    line-height: 1.23;
+    opacity: 0.02;
+    font-size: 400px;
+    font-family: $font-accent;
+}
+
+// TITLE
+
+@mixin titleH2 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 1px;
+    font-family: $font-secondary;
+    @include tablet(){
+        font-size: 40px;
+    }
+}
+
+@mixin titleH3 {
+    color: $dark;
+    text-align: center;
+    font-family: $font-secondary;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+// SUBTITLE
+@mixin subtitleP {
+    color: $gray;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+    @include tablet(){
+        font-size: 18px;
+    }
+}
+
+// MEDIA
+/* stylelint-disable */
+
+@mixin for-desktop {
+    @media (max-width: (1200px)) {
+        @content;
+    }
+}
+
+@mixin big-desktop {
+    @media (max-width: (1430px)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: (1024px)) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: (768px)) {
+        @content;
+    }
+}
